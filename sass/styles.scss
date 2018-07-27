@@ -1,0 +1,143 @@
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+
+@font-face {
+    font-family: 'ExoThin';
+    src: url(../fonts/Exo2.0-Thin.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+font-size: 14px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: #000;
+}
+
+.main-title {
+    font-family: 'ExoThin';
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main {
+    background: url(../img/Pattern.png) repeat-x;
+    background-size: cover;
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+}
+
+.main-item {
+    border: 4px solid #1698d9;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 450px;
+    width: 290px;
+    background-image: url(../img/funbox_logo.png);
+    background-position: -30px 195px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    position: relative;
+    clip-path: polygon(14% 0%, 106% 0%, 100% 100%, 0 100%, 0 10%);
+    cursor: pointer;
+}
+
+.main-item:hover {
+    border: 4px solid #2ea8e6;
+}
+
+.main-item-text {
+    margin-top: 15px;
+    margin-left: 45px;
+    .item-text1 {
+     font-size: 16px;
+     color: #666666;
+     margin: 0;
+    line-height: 24px;
+    padding-bottom: 5px;
+    }
+    .item-text2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 48px;
+    }
+    .item-text3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 10px;
+    }
+    .item-text4 {
+    margin: 0;
+    color: #666666;
+    line-height: 16px;
+    }
+}
+
+.item-weight {
+    background-color: #1698d9;
+    border-radius: 50%;
+    border: 1px solid #1698d9;
+    width: 79px;
+    height: 79px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+}
+
+.item-weight:hover {
+    background-color: #2ea8e6;
+    border: 1px solid #2ea8e6;
+}
+
+.item-weight p {
+    color: #fff;
+    margin: 0;
+    font-size: 42px;
+    line-height: 60px;
+    display: inline-block;
+}
+
+.item-weight span {
+    display: block;
+    color: #fff;
+    line-height: 0;
+    font-size: 20px;
+}
+
+.main-item-footer p {
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.main-item-footer > p > a {
+    color: #1698d9;
+    text-decoration-style: dashed;
+    font-weight: bold;
+}
+
+.main-item-footer span {
+    color: #1698d9;
+}
+
+.main-item-footer > p > a:hover {
+    color: #2ea8e6;
+}
+
+.main-item-selected {
+    border: 4px solid #d91667;
+}
+
+.item-weight-selected {
+    border: 1px solid #d91667;
+    background-color: #d91667;
+}
